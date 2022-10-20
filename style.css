@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+
+/* font-family: 'Josefin Sans', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+}
+
+
+html {
+    font-size: 90.5%;
+}
+
+.header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #2d3436;
+    color: white;
+}
+
+.main-div {
+    background: url('bg.jpg');
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    width: 100vw;
+    min-height: 93vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: hsl(206, 92%, 94%); */
+}
+
+.inner-div {
+    width: 40vw;
+    background-color: rgb(97, 109, 246);
+    padding: 3rem 8rem;
+    margin: 2rem 7rem;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+    opacity: 0.7;
+}
+
+.inner-div h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 1rem 0 4rem 0;
+
+}
+
+.inner-div li {
+    font-size: 18px;
+    margin-top: 1.5rem;
+    list-style: none;
+    color: white;
+
+}
+
+input {
+    cursor: pointer;
+
+}
+
+#submit,
+.btn {
+    padding: 1rem 2rem;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    display: block;
+    margin: auto;
+    border: none;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #3f0a7c;
+    margin-top: 4rem;
+    cursor: pointer;
+}
+
+#submit:hover {
+    background-color: #0984e3;
+}
+
+#showScore {
+    background-color: #dfe6e9;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+}
+
+.scoreArea {
+    display: none;
+}
+
+#showScore h3 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+#showScore .btn {
+    margin-top: 1.5rem;
+    background-color: #55efc4;
+    color: #2d3436;
+}
+
+#showScore .btn:hover {
+    background-color: #00b894;
+    color: #fff;
+}
+
+@media only screen and (max-width: 570px) {
+    body {
+        background-color: hsl(206, 92%, 94%);
+    }
+
+    .main-div {
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(206, 92%, 94%);
+    }
+
+    .inner-div {
+        display: inline-block;
+        width: 80vw;
+        padding: 12px 12px;
+        margin: 20px 10px;
+        border-radius: 1rem;
+        box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4);
+
+    }
+
+    .inner-div h2 {
+        font-size: 18px;
+        margin-top: 12px;
+
+    }
+
+    .inner-div li {
+        font-size: 12px;
+        color: rgb(255, 241, 241);
+
+    }
+
+    input {
+        font-size: 8px;
+        display: inline-block;
+    }
+
+    #submit,
+    .btn {
+        padding: 4px 5px;
+        outline: none;
+        font-size: 11px;
+        font-weight: 400;
+        display: block;
+        margin: auto;
+        border: none;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: #1b1ee8;
+        margin-top: 25px;
+        cursor: pointer;
+    }
+
+    #showScore {
+        margin-top: 7px;
+        padding: 6px;
+    }
+
+    #showScore h3 {
+        font-size: 12px;
+
+    }
+
+    #showScore .btn {
+        font-size: 11px;
+    }
+}
